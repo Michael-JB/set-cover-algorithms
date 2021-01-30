@@ -6,7 +6,9 @@ A repository containing C++ implementations of a range of approximation algorith
   - Naive Progressive Greedy [[2]](#2)
   - Progressive Greedy [[2]](#2)
   - Emek-Rosen Semi-Streaming Set Cover [[3]](#3)
-  - Multi-pass Semi-Streaming Set Cover
+  - Multi-pass Semi-Streaming Set Cover [[4]](#4)
+
+_Note: Though not included here, I have also implemented more optimal versions of these algorithms which altogether avoid the use of `std::unordered_map`. These optimised versions were used in our paper [[4]](#4). They instead use dynamic arrays and require the set elements in input instances to be mapped to the contiguous interval [1, n] (for universe size n). Please contact me if you wish to access these implementations._
 
 ## Usage
 Each implementation is contained its own directory. Usage instructions are given in corresponding `README.md` files.
@@ -36,3 +38,9 @@ Society for Industrial and Applied Mathematics.
 Emek, Y., & Rosén, A. (2016).
 Semi-streaming set cover.
 ACM Transactions on Algorithms (TALG), 13(1), 1-22.
+
+<a id="4">[4]</a>
+Barlow, M., Konrad, C., & Nandasena, C. (2021).
+Streaming Set Cover in Practice.
+In 2021 Proceedings of the Workshop on Algorithm Engineering and Experiments (ALENEX) (pp. 181-192).
+Society for Industrial and Applied Mathematics.
